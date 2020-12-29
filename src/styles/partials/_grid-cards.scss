@@ -1,0 +1,140 @@
+
+.grid-cards__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 3px;
+    padding-bottom: 2.25rem;
+
+    .grid-cards__card {
+      position:relative;
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-size: cover;
+
+      .grid-cards__card-text {
+          position: absolute;
+          bottom:0;
+          width: 100%;
+          background-color: $primary;
+          padding: 1rem 1.75rem 0rem 1.75rem;
+          font-weight: 700;
+          h3 {
+            font-size: 1.25rem;
+            color: $white;
+            text-transform: uppercase;
+          }
+          p {
+            font-size: 1rem;
+            line-height: 1.1;
+          }
+        }
+  &.div1 {
+    //grid-area: 1 / 1 / 7 / 2;
+    background-image: url('/images/card-div1.jpg');
+    background-position: bottom right;
+    background-color: $primary;
+    height: 20rem; 
+
+  }
+  &.div2 {
+  //  grid-area: 1 / 2 / 4 / 3;
+    background-image: url('/images/card-div2.jpg');
+    background-color: $secondary;
+    .grid-cards__card-text {
+      background-color: $secondary;
+    }
+  }
+
+  &.div3 {
+  //  grid-area: 4 / 2 / 7 / 3;
+    background-image: url('/images/card-div3.jpg');
+    background-color: $tertiary;
+    .grid-cards__card-text {
+      background-color: $tertiary;
+    }
+  }
+
+  &.div4 {
+  //  grid-area: 1 / 3 / 3 / 4;
+    background-image: url('/images/card-div4.jpg');
+    background-color: $tertiary;
+    .grid-cards__card-text {
+      background-color: $tertiary;
+    }
+  }
+
+  &.div5 {
+  //  grid-area: 3 / 3 / 5 / 4;
+    background-image: url('/images/card-div5.jpg');
+    background-color: $secondary;
+    .grid-cards__card-text {
+      background-color: $secondary;
+    }
+  }
+
+  &.div6 {
+  //  grid-area: 5 / 3 / 7 / 4;
+  background-image: url('/images/card-div6.jpg');
+    background-color: $primary;
+  }
+
+    }
+
+@media only screen and (min-width: 780px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    .grid-cards__card {
+    &.div1 {
+      grid-area: 1 / 1 / 7 / 2;
+      height: 45rem; 
+      background-position: center right -25rem;
+    }
+    &.div2 {
+      grid-area: 1 / 2 / 4 / 3;
+    }
+
+    &.div3 {
+     grid-area: 4 / 2 / 7 / 3; 
+    }
+
+    &.div4 {
+     grid-area: 1 / 3 / 3 / 4;
+
+    }
+
+    &.div5 {
+      grid-area: 3 / 3 / 5 / 4;
+
+    }
+    &.div6 {
+     grid-area: 5 / 3 / 7 / 4;
+    
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  .grid-cards__card {
+  .grid-cards__card-text {
+    h3 {
+      font-size: 1.5rem;
+    }
+      p {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+a {
+  display:block;
+  height:100%;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='43.67' height='46.854' viewBox='0 0 43.67 46.854'%3E%3Cpath d='M30.393 12.198a3.759 3.759 0 00-1.274.85 3.808 3.808 0 00-4.181-.916 3.758 3.758 0 00-1.395.979 3.8 3.8 0 00-3.9-.65 3.755 3.755 0 00-1.062.653L17 9.206a3.8 3.8 0 10-7.046 2.847l5.683 14.066-3.716-1.882-.079-.036a3.812 3.812 0 00-2.915-.035l-.022.01a3.761 3.761 0 00-2.067 2.027c-.699 1.64-.063 3.396 1.737 4.819 2.332 1.845 4.727 3.506 6.841 4.972 1.548 1.074 3.007 2.086 4.123 2.959.971.756 3.786 3.344 3.814 3.37a1.286 1.286 0 001.352.247l15.08-6.093a1.286 1.286 0 00.802-1.286c-.075-.986-.736-9.733-1.947-12.731l-3.288-8.136a3.82 3.82 0 00-4.96-2.126zm.294 4.011a1.23 1.23 0 112.28-.922l3.288 8.137c.804 1.99 1.436 7.957 1.694 11.023l-13.45 5.434c-.91-.829-2.607-2.36-3.375-2.96-1.177-.914-2.664-1.943-4.237-3.033-2.083-1.443-4.443-3.08-6.715-4.873-.592-.47-1.241-1.161-.97-1.799a1.227 1.227 0 01.673-.652 1.257 1.257 0 01.929-.003l6.724 3.403a1.286 1.286 0 001.773-1.629l-6.967-17.244a1.231 1.231 0 112.282-.922l4.498 11.132a1.286 1.286 0 002.384-.963l-1.562-3.867a1.23 1.23 0 112.281-.921l2.19 5.421a1.286 1.286 0 102.385-.963l-1.562-3.866a1.23 1.23 0 112.281-.921l2.191 5.422a1.286 1.286 0 102.385-.964l-1.402-3.47z'/%3E%3C/svg%3E"), pointer;
+  &:hover {
+    background-color: inherit;
+  }
+}
+}

@@ -1,0 +1,17 @@
+<section class="container-fluid wayslearn">
+  <div class="container">
+        <div class="row">
+          <div class="col-12 text-center wayslearn__header">
+            <h2><%= iconsec.title %></h2>
+          </div>
+        </div>
+        <div class="row wayslearn__icons">
+          <% iconsec.icons.forEach(function(icon){ %>
+            <div class="col-12 col-md-4 text-center">
+              <svg role="img" class="icon" title="<%= icon.title %>"><use xlink:href="/images/imarc-sprite_v2.svg#<%= icon.slug %>"></use></svg>
+              <h5><%- icon.title %></h5>
+              </div>
+          <% }); %>  
+      </div>
+      </div>
+      </section>    

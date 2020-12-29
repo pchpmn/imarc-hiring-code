@@ -1,0 +1,43 @@
+
+<footer class="footer">
+  <div class="container">
+    <div class="row footer__mainnav">
+      <div class="col-12 col-md col-lg-3">
+        <h3 class="footer__brand">
+          <a href="/"><img src="<%= footer.logo %>"   alt="<%= footer.title %>"></a>
+        </h3>
+        <ul class="footer__social">
+          <% footer.social.list.forEach(function(socialitem){ %>
+          <li>
+            <a href="<%= socialitem.url %>" target="_blank"><img src="/images/icon_<%- socialitem.title %>.png" alt="<%- socialitem.title %>"></a>
+          </li>
+        <% }); %>
+          </ul>
+        </div>
+  <% footer.mainnav.list.forEach(function(navitem){ %>            
+    <div class="col-6 col-md col-lg-2 footer__mainnav_navitem">
+    <h4>
+      <a href="<%= navitem.url %>"><%= navitem.title %></a>
+    </h4>
+    <% if(navitem.sublist){ %>
+      <% navitem.sublist.forEach(function(sublist){ %> 
+        <p><a href="<%= sublist.url %>"><%= sublist.title %></a></p>
+      <% }); %>
+    <% } %>
+    </div>
+  <% }); %>
+  
+  </div>
+
+    <div class="footer__secondary">
+        <ul>
+    <% footer.secondnav.list.forEach(function(item){ %>  
+      <li>
+        <a href="<%= item.url %>"><%- item.title %></a>
+      </li>
+    <% }); %>
+        </ul>
+      </div>
+    </div>
+
+</footer>

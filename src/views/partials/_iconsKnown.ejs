@@ -1,0 +1,27 @@
+
+<section class="container knownfor">
+        <div class="row">
+          <div class="col-12 text-center knownfor__header">
+            <h2><%= iconsec.title %></h2>
+          </div>
+        </div>
+        <div class="row">
+          <% iconsec.icons.forEach(function(icon){ %>
+            <div class="col-12 col-md-4 knownfor__block">
+                <svg role="img" class="icon" title="<%= icon.title %>"><use xlink:href="/images/imarc-sprite_v2.svg#<%= icon.slug %>"></use></svg>
+              <a href="<%= icon.url %>">
+              
+               <span><%- icon.title %> &nbsp;<svg xmlns="http://www.w3.org/2000/svg"
+                      width="8.359"
+                      height="9.536"
+                      viewBox="0 0 8.359 9.536">
+                   <path data-name="Path 584"
+                         d="M8.019 4.169L1.144.109A.763.763 0 000 .784v7.975a.763.763 0 001.144.675l6.875-4.06a.7.7 0 000-1.2"
+                         fill="#db5935" />
+                 </svg></span></a>
+               
+              </div>
+          <% }); %>  
+      </div>
+      </section>    
+  

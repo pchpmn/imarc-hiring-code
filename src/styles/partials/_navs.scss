@@ -1,0 +1,146 @@
+.navbar {
+  box-shadow: rgba(252,71,122,0.2) 0px 2px 3px, inset rgba(252,71,122,0.2) 0px -1px 2px;
+  .navbar-nav {
+    padding-left: 0.75rem;
+    padding-bottom: 0.75rem;
+    width: 100%;
+    @media screen and (min-width: 992px) {
+      padding-bottom: 0;
+        padding-left: 3rem;
+    }
+    li {
+      padding: 0;
+      @media screen and (min-width: 992px) {
+          padding: 0 2rem;
+      }
+      &:last-child {
+        @media screen and (min-width: 992px) {
+          flex: 1;
+          text-align: right;
+          padding-right: 0;
+        }
+        
+      }
+      .nav-link {
+        font-size: 1rem;
+        font-weight: 600;
+        
+        &.nav-link__button {
+          background-color: $secondary;
+          color: $white !important;
+          font-size: 0.9375rem;
+          font-weight: 400 !important;
+          cursor: pointer;
+          display: inline-block;
+          font-weight: $font-weight-normal;
+          width: 10rem;
+          letter-spacing: 0.1rem;
+          padding: 1rem;
+          text-align: center;
+          text-decoration: none;
+          text-transform: uppercase;
+          white-space: nowrap;
+        @media screen and (min-width: 992px) {
+            padding: 0.75rem 3.5rem 0.75rem 1rem;
+        }
+          &:focus,
+          &:hover {
+            background-color: $tertiary;
+            color: $orange;
+            outline: 0;
+          }
+          @media screen and (min-width: 992px) {
+          &::after {
+          display: inline-block;
+          margin-left:1rem;
+            content: "";
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8.359' height='9.536' viewBox='0 0 8.359 9.536'%3E%3Cpath data-name='Path 584' d='M8.019 4.169L1.144.109A.763.763 0 000 .784v7.975a.763.763 0 001.144.675l6.875-4.06a.7.7 0 000-1.2' fill='%23ffffff'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            height: 10px;
+            width: 8px;
+        }
+      }
+    }
+
+        &.nav-link__animated {
+          position: relative;
+          transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+
+        &:hover {
+          color: #000 !important;
+          background-color: transparent;
+        &:before {
+          left: 0%;
+          right: auto;
+          width: 100%;
+        }
+        }
+
+        &:before {
+          display: block;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          height: 100%;
+          width: 0px;
+          z-index: -1;
+          content: '';
+          color: #000 !important;
+          background: $tertiary;
+          transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+        }
+        }
+      }
+    }
+}
+  
+}
+
+
+footer {
+  .footer__mainnav {
+    padding-top:4rem;
+    
+    h4 {
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+    p {
+      font-size: 0.875rem;
+    font-weight: 200;
+    margin: 0;
+  }
+  .footer__mainnav_navitem {
+    padding-bottom: 1.5rem;
+  }
+  }
+  li {
+    display: inline-block;
+  }
+  .footer__social {
+    padding:0;
+    a {
+      display: block;
+    }
+  }
+  .footer__secondary {
+    width: 100%;
+  font-size: 0.75rem;
+  border-top: 1px solid $orange;
+  padding-top: 1.5rem;
+  ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width:100%;
+       li {
+          &:nth-child(2) {
+            flex: 1;
+            text-align: right;
+            padding-right: 4rem;
+          }
+      }
+  }
+}
+}

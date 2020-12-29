@@ -1,0 +1,12 @@
+<%- include('partials/_header', { metatags: homepage.metatags }); %>
+<%- include('partials/_nav', { navigation: nav.navContent }); %>
+
+<main id="main-content">
+  <%- include('partials/_hero', { hero: homepage.hero }); %>
+  <%- include('partials/_iconsKnown', { iconsec: homepage.knownFor }); %>
+  <%- include('partials/_grid', { hero: homepage.hero }); %>
+  <%- include('partials/_iconsLearn', { iconsec: homepage.waysLearn }); %>
+</main>
+
+<%- include('partials/_footernav', { footer: foot.footerContent }); %>
+<%- include('partials/_footer'); %>

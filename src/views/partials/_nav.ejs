@@ -1,0 +1,26 @@
+
+
+ <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
+   <div class="container">
+    <a href="#main-content" class="sr-only">
+        Skip Navigation
+    </a>
+   <a class="navbar-brand" href="/"><img src="<%= navigation.logo %>"
+       alt="<%= navigation.title %>"></a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+       
+       <% navigation.list.forEach(function(navitem){ %>
+         <li class="nav-item">
+           <a href="<%= navitem.url %>"
+              class="nav-link <%= navitem.class %>"><%= navitem.title %></a>
+         </li>
+       <% }); %>
+     </ul>
+   </div>
+   </div>
+ </nav>

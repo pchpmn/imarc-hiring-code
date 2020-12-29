@@ -1,0 +1,22 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+$black: #000;
+$white: #FFFFFF;
+$gray-700: #373A3C;
+$orange: #DB5935;
+$yellow: #F0AE43;
+$pink: #DA3467;
+$primary: $pink;
+$secondary: $orange;
+$tertiary: $yellow;
+$gray-100: #EBE9DF;
+$yiq-text-dark: $gray-700;
+$font-family-sans-serif: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-weight-bolder: 800;
+$navbar-toggler-border-radius: 0;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$pink}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-light-toggler-border-color: $white;
+$navbar-light-color: $black;
+$navbar-light-hover-color: $primary;
+$navbar-light-active-color: $primary;

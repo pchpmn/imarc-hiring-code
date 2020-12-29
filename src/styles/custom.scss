@@ -1,0 +1,77 @@
+
+/*
+light 300 
+regular 400 
+medium 500
+semi-bold 600
+bold 700 
+extra bold 800 
+*/
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+// Default body styles
+body {
+  font-family: $font-family-sans-serif;
+  font-size: 1rem; 
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+}
+
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: 800;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width:992px) {
+	h1 {
+		font-size: 5.25rem
+	}
+}
+
+h2 {
+	font-size: 1.75rem;
+	font-weight: 500
+}
+
+@media screen and (min-width:992px) {
+	h2 {
+		font-size: 2.25rem
+	}
+}
+
+h5 {
+	font-size: 1.15rem;
+	font-weight: 500
+}
+
+@media screen and (min-width:992px) {
+	h5 {
+		font-size: 1.25rem
+	}
+}
+
+
+a {
+	color: $black;
+	cursor: pointer;
+	line-height: normal;
+	padding: 0;
+	text-decoration: none;
+  
+  &:active,
+  &:hover {
+  	color: $primary;
+    text-decoration: none;
+  }
+}
+
+main {
+  padding-top: 72px; // leave room for sticky nav
+}
+
